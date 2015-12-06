@@ -5,6 +5,6 @@ section: tutorials
 
 Introducing Aether
 
-```fsharp
+{% highlight fsharp linenos=table %}
 let x = 15
-```
+{% endhighlight %}
