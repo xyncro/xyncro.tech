@@ -1,0 +1,16 @@
+name: Aether
+description: Optics for F#
+artefacts:
+  github: https://xyncro.github.com/aether
+  nuget: https://www.nuget.org/packages/aether
+sections:
+  updates:
+    name: Updates
+  tutorials:
+    name: Tutorials
+  reference:
+    name: Reference
+  packages:
+    name: Packages
+  source:
+    name: Source

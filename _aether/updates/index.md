@@ -1,5 +1,5 @@
 ---
-title: Xyncro Projects
+title: Updates
 ---
 
 {% include updates/feed.html %}

@@ -1,0 +1,12 @@
+name: Hekate
+description: Functional Graphs for F#
+artefacts:
+  github: https://xyncro.github.com/hekate
+  nuget: https://www.nuget.org/packages/hekate
+sections:
+  updates:
+    name: Updates
+  packages:
+    name: Packages
+  source:
+    name: Source

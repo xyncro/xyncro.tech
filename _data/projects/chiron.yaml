@@ -1,0 +1,12 @@
+name: Chiron
+description: JSON for F#
+artefacts:
+  github: https://xyncro.github.com/chiron
+  nuget: https://www.nuget.org/packages/chiron
+sections:
+  updates:
+    name: Updates
+  packages:
+    name: Packages
+  source:
+    name: Source

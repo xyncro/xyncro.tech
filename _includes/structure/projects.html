@@ -1,0 +1,7 @@
+<nav>
+  <ul>
+    {% for project in site.data.projects %}
+    <li><a href="/{{ project[0] }}/index.html">{{ project[1].name }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
