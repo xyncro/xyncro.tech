@@ -1,10 +1,17 @@
 {% assign project = site.data.projects[page.collection] %}
 {% if project.sections != null %}
-<nav>
+<nav id="sections">
   <ul>
     {% for section in project.sections %}
+    {% if section[0] == page.section %}
+    {% assign class = "active" %}
+    {% else %}
+    {% assign class = "" %}
+    {% endif %}
     <li>
-      <a href="/{{ page.collection }}/{{ section[0] }}/index.html">{{ section[1].name }}</a>
+      <a href="/{{ page.collection }}/{{ section[0] }}" class="{{ class }}">
+        {{ section[1].name }}
+      </a>
     </li>
     {% endfor %}
   </ul>

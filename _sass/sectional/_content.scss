@@ -1,0 +1,19 @@
+@import "global/colours";
+@import "global/fonts";
+
+#content {
+    margin-top: 77px;
+    width: 500px;
+
+    a {
+        border-bottom: 1px dashed $c-mid;
+
+        &:hover {
+            border-bottom: 1px solid $c-mid;
+        }
+    }
+    
+    h1, h2, h3, h4 {
+        color: $c-light;
+    }
+}

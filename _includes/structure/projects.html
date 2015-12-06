@@ -1,7 +1,16 @@
-<nav>
+<nav id="projects">
   <ul>
     {% for project in site.data.projects %}
-    <li><a href="/{{ project[0] }}/index.html">{{ project[1].name }}</a></li>
+    {% if project[0] == page.collection %}
+    {% assign class = "active" %}
+    {% else %}
+    {% assign class = "" %}
+    {% endif %}
+    <li>
+      <a href="/{{ project[0] }}" class="{{ class }}">
+        {{ project[1].name }}
+      </a>
+    </li>
     {% endfor %}
   </ul>
 </nav>

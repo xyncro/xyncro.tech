@@ -3,10 +3,19 @@
 {% assign docs = site.collections[page.collection].docs | where: "section", page.section %}
 {% assign count = docs | size %}
 {% if count > 1 %}
-<nav>
+<nav id="documents">
   <ul>
     {% for doc in docs %}
-    <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+    {% if page.url == doc.url %}
+    {% assign class = "active" %}
+    {% else %}
+    {% assign class = "" %}
+    {% endif %}
+    <li>
+      <a href="{{ doc.url }}" class="{{ class }}">
+        {{ doc.title }}
+      </a>
+    </li>
     {% endfor %}
   </ul>
 </nav>

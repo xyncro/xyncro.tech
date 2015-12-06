@@ -1,0 +1,12 @@
+<nav id="top">
+  <ul>
+    <li>
+      {% if page.url == "/index.html" %}
+      {% assign class = "active" %}
+      {% else %}
+      {% assign class = "" %}
+      {% endif %}
+      <a href="/" class="{{ class }}">..</a>
+    </li>
+  </ul>
+</nav>

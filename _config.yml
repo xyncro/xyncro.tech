@@ -1,6 +1,9 @@
 # Build
 
+encoding: utf-8
+highlighter: pygments
 markdown: kramdown
+permalink: pretty
 
 # Collections
 

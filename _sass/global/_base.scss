@@ -1,0 +1,29 @@
+@import "global/colours";
+@import "global/fonts";
+
+body {
+    background-color: $c-base;
+    color: $c-dark;
+    
+    font-family: 'Roboto';
+    font-size: $s-body;
+    font-weight: $w-block;
+
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+
+    margin: 60px 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+
+    color: $c-dark;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 20px 0;
+}

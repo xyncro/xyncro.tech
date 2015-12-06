@@ -2,11 +2,18 @@
 <html>
   <head>
     <title>Xyncro Projects</title>
+    <link href="/css/main.css" rel="stylesheet" />
     <meta charset="utf-8" />
   </head>
   <body>
-    {% include structure/core.html %}
-    {{ content }}
+    <div id="structure">
+      {% include structure/core.html %}
+    </div>
+    <div id="content">
+      {{ content }}
+    </div>
+    {% comment %}
     {% include debug.html %}
+    {% endcomment %}
   </body>
 </html>

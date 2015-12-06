@@ -1,0 +1,45 @@
+@import "global/colours";
+@import "global/fonts";
+
+#structure {
+    font-weight: $w-display;
+    text-align: right;
+    margin-right: 120px;
+    width: 400px;
+
+    h1 {
+        margin: 0 0 40px 0;
+    }
+
+    ul {
+        margin: 0 0 40px 0;
+        padding: 0;
+        list-style: none;
+        
+        a {
+            color: $c-light;
+            font-weight: $w-display;
+            text-decoration: none;
+            
+            &:hover {
+                color: $c-mid;
+            }
+            
+            &.active {
+                color: $c-dark;
+            }
+        }
+    }
+
+    #top, #projects {
+        font-size: $s-large;
+    }
+    
+    #sections {
+        font-size: $s-medium;
+    }
+    
+    #documents {
+        font-size: $s-small;
+    }
+}
