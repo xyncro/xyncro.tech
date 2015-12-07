@@ -3,5 +3,5 @@ title: Packages
 section: packages
 ---
 
-{% include artefacts/packages.html %}
+{% include artefacts/packages.md %}
 

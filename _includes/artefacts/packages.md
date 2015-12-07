@@ -6,7 +6,7 @@
 
 Packages (release and pre-release) for {{ project.name }} are released [via NuGet]({{ project.artefacts.nuget }}). {{ project.name }} can be installed using the NuGet Package Manager, or the NuGet Console:
 
-{% highlight batch %}
+{% highlight batch linenos=table %}
 PM> Install-Package {{ project.name }}
 {% endhighlight %}
 
