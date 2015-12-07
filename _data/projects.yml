@@ -1,0 +1,43 @@
+aether:
+  name: Aether
+  description: Optics for F#
+  artefacts:
+    github: https://xyncro.github.com/aether
+    nuget: https://www.nuget.org/packages/aether
+  sections:
+    updates:
+      name: Updates
+    tutorials:
+      name: Tutorials
+    reference:
+      name: Reference
+    packages:
+      name: Packages
+    source:
+      name: Source
+chiron:
+  name: Chiron
+  description: JSON for F#
+  artefacts:
+    github: https://xyncro.github.com/chiron
+    nuget: https://www.nuget.org/packages/chiron
+  sections:
+    updates:
+      name: Updates
+    packages:
+      name: Packages
+    source:
+      name: Source
+hekate:
+  name: Hekate
+  description: Graphs for F#
+  artefacts:
+    github: https://xyncro.github.com/hekate
+    nuget: https://www.nuget.org/packages/hekate
+  sections:
+    updates:
+      name: Updates
+    packages:
+      name: Packages
+    source:
+      name: Source
