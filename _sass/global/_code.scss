@@ -6,7 +6,7 @@
             
 @mixin code {
     font-family: 'Source Code Pro';
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
 }
             
@@ -17,11 +17,9 @@
 // Tables
 
 .highlighttable {
-    background-color: #fff;
-    border: 1px solid lighten($c-light, 10%);
     border-collapse: collapse;
-    margin: 0 0 20px 0;
-    width: 600px;
+    margin: 0 0 20px -50px;
+    width: 630px;
     
     pre {
         @include code;
@@ -29,13 +27,16 @@
     }
     
     .linenos {
-        padding: 0 20px;
         color: lighten($c-light, 5%);
+        padding: 0 0px 0 0;
+        width: 30px;
     }
 
     .code {
+        background-color: #fff;
+        border: 1px solid lighten($c-light, 5%);
         padding: 0 20px;
-        width: 600px;
+        width: 560px;
     }
 }
 

@@ -3,4 +3,4 @@ title: Source
 section: source
 ---
 
-{% include artefacts/source.html %}
+{% include artefacts/source.md %}
