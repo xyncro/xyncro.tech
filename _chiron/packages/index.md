@@ -3,5 +3,5 @@ title: Packages
 section: packages
 ---
 
-{% include artefacts/packages.md %}
+{% include artefacts/packages.md project="chiron" %}
 

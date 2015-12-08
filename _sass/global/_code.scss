@@ -19,7 +19,7 @@
 .highlighttable {
     border-collapse: collapse;
     margin: 0 0 20px -50px;
-    width: 630px;
+    width: 570px;
     
     pre {
         @include code;
@@ -28,7 +28,7 @@
     
     .linenos {
         color: lighten($c-light, 5%);
-        padding: 0 0px 0 0;
+        padding: 1px 0px 0 0;
         width: 30px;
     }
 
@@ -36,7 +36,7 @@
         background-color: #fff;
         border: 1px solid lighten($c-light, 10%);
         padding: 0 20px;
-        width: 560px;
+        width: 500px;
     }
 }
 

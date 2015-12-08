@@ -1,6 +1,6 @@
 {% if page.collection != null and page.section != null %}
 {% assign section = site.data.projects[page.collection].sections[page.section] %}
-{% assign docs = site.collections[page.collection].docs | where: "section", page.section %}
+{% assign docs = site.collections[page.collection].docs | where: "section", page.section | sort: "precedence" %}
 {% assign count = docs | size %}
 {% if count > 1 %}
 <nav id="documents">

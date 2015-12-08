@@ -2,7 +2,7 @@ aether:
   name: Aether
   description: Optics for F#
   artefacts:
-    github: https://xyncro.github.com/aether
+    github: https://github.com/xyncro/aether
     nuget: https://www.nuget.org/packages/aether
   sections:
     updates:
@@ -19,7 +19,7 @@ chiron:
   name: Chiron
   description: JSON for F#
   artefacts:
-    github: https://xyncro.github.com/chiron
+    github: https://github.com/xyncro/chiron
     nuget: https://www.nuget.org/packages/chiron
   sections:
     updates:
@@ -32,7 +32,7 @@ hekate:
   name: Hekate
   description: Graphs for F#
   artefacts:
-    github: https://xyncro.github.com/hekate
+    github: https://github.com/xyncro/hekate
     nuget: https://www.nuget.org/packages/hekate
   sections:
     updates:

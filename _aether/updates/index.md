@@ -3,4 +3,4 @@ title: Updates
 section: updates
 ---
 
-{% include updates/feed.html %}
+{% include updates/feed.html project="aether" %}

@@ -1,10 +1,8 @@
-{% assign project = site.data.projects[page.collection] %}
-
-# Packages
+{% assign project = site.data.projects[include.project] %}
 
 ## NuGet
 
-Packages (release and pre-release) for {{ project.name }} are released [via NuGet][package]. {{ project.name }} can be installed using the NuGet Package Manager, or the NuGet Console:
+Packages (release and pre-release) for __{{ project.name }}__ are released [via NuGet][package]. {{ project.name }} can be installed using the NuGet Package Manager, or the NuGet Console:
 
 {% highlight batch linenos=table %}
 PM> Install-Package {{ project.name }}

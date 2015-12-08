@@ -1,0 +1,12 @@
+@import "global/fonts";
+
+dl {
+    margin: 0 0 20px 0;
+    padding: 0;
+
+    dt {
+        color: $c-light;
+        float: left;
+        width: 120px;
+    }
+}

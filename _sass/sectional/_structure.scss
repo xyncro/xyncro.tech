@@ -3,8 +3,9 @@
 
 #structure {
     font-weight: $w-display;
+    position: fixed;
+    top: 60px;
     text-align: right;
-    margin-right: 120px;
     width: 400px;
 
     h1 {

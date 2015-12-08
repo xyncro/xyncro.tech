@@ -1,7 +1,12 @@
+{% assign project = site.data.projects[page.collection] %}
+{% assign section = site.data.projects[page.collection].sections[page.section] %}
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Xyncro Projects</title>
+    <title>
+      Xyncro Tech{% if project.name != null %} / {{ project.name }}{% endif %}{% if section.name != null %} / {{ section.name }}{% endif %}{% if page.title != null and page.title != section.name %} / {{ page.title }}{% endif %}
+    </title>
     <link href="/css/main.css" rel="stylesheet" />
     <meta charset="utf-8" />
   </head>
@@ -10,8 +15,8 @@
       {% include structure/core.html %}
     </div>
     <div id="content">
+      <h1>{{ page.title }}</h1>
       {{ content }}
     </div>
-    <!--% include debug.html %-->
   </body>
 </html>
