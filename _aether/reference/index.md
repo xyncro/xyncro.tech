@@ -11,4 +11,5 @@ Note that opening __Aether__, for example, brings in to scope things in various 
 - [Aether][aether]
 - [Aether.Operators][aether]
 
-[aether]: /aether/reference/core.html
+[aether]: /aether/reference/aether.html
+[aether.operators]: /aether/reference/aether.operators.html
