@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:200,300,400");
 
 @import "global/colours";
 
 // Mixins
             
 @mixin code {
-    font-family: 'Source Code Pro';
-    font-size: 13px;
+    font-family: 'Roboto Mono';
+    font-size: 12px;
     font-weight: 400;
 }
             
 @mixin comment {
-    color: #ccc;
+    color: $c-light;
 }
 
 // Tables
@@ -56,7 +56,7 @@
     }
     
     .k {
-        color: #859900;  /* Keyword */
+        color: rgb(113,154,7);  /* Keyword */
     }
     
     .l {
@@ -64,11 +64,11 @@
     }
     
     .n {
-        color: #586e75;  /* Name */
+        color: rgb(2,108,117);  /* Name */
     }
     
     .o {
-        color: #859900;  /* Operator */
+        color: #333; // #859900;  /* Operator */
     }
     
     .x {
@@ -158,7 +158,7 @@
     }
     
     .kt {
-        color: #dc322f;  /* Keyword.Type */
+        color: rgb(43,145,175);  /* Keyword.Type */
     }
     
     .ld {
@@ -182,7 +182,7 @@
     }
     
     .nc {
-        color: #268bd2;  /* Name.Class */
+        color: rgb(43,145,175);  /* Name.Class */
     }
     
     .no {

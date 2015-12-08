@@ -2,7 +2,7 @@
 @import "global/fonts";
 
 #content {
-    margin: 137px 0 60px 520px;
+    margin: 137px 0 60px 420px;
     width: 500px;
 
     a {
@@ -32,6 +32,22 @@
             color: $c-light;
             float: left;
             width: 120px;
+        }
+    }
+
+    .contents {
+        position: fixed;
+        top: 137px;
+        left: 1030px;
+
+        a {
+            border-bottom: none;
+            color: $c-light;
+            font-weight: $w-block;
+
+            &:hover {
+                color: $c-mid;
+            }
         }
     }
 }
