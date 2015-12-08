@@ -17,4 +17,22 @@
     h1, h2, h3, h4 {
         color: $c-light;
     }
+
+    ul {
+        list-style: none;
+        line-height: 21px;
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+
+    dl {
+        margin: 0 0 20px 0;
+        padding: 0;
+        
+        dt {
+            color: $c-light;
+            float: left;
+            width: 120px;
+        }
+    }
 }

@@ -8,6 +8,7 @@ Reference material for Aether (in common with other Xyncro projects) is split in
 
 Note that opening __Aether__, for example, brings in to scope things in various modules which are auto-opened. This is not shown explicitly, instead the functions are shown as they can be used, leaving the physical module structure out, as the developer experience is designed.
 
-Read on for the reference for the [Aether][aether] module.
+- [Aether][aether]
+- [Aether.Operators][aether]
 
 [aether]: /aether/reference/core.html
