@@ -4,7 +4,7 @@ title: QuickStart
 
 This is the place to get started using __Chiron__, an open source library for working with JSON in [F#][fsharp]. The simplest way to get started is to get Chiron from NuGet:
 
-{% highlight batch linenos=table %}
+{% highlight batch %}
 PM> Install-Package Chiron
 {% endhighlight %}
 

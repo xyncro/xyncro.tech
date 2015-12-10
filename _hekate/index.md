@@ -4,7 +4,7 @@ title: QuickStart
 
 This is the place to get started using __Hekate__, an open source library for working with graphs (in the nodes and edges sense, rather than charting) in [F#][fsharp]. The simplest way to get started is to get Hekate from NuGet:
 
-{% highlight batch linenos=table %}
+{% highlight batch %}
 PM> Install-Package Hekate
 {% endhighlight %}
 
