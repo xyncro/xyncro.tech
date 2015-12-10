@@ -156,7 +156,7 @@ One last thing to add here, is that the concept of mapping using a lens is now t
 
 ## Aether
 
-Of course, Aether provides all of this and more out of the box. All that you need to provide to use Aether is lenses appropriate to your own data structures. Let's see what this would look like in Aether, with our types modified to provide lenses:
+Of course, Aether provides all of this and more out of the box. All that you need to provide to use Aether are lenses appropriate to your own data structures. Let's see what this would look like in Aether, with our types modified to provide lenses:
 
 {% highlight fsharp %}
 type RecordA =
@@ -172,7 +172,7 @@ type RecordA =
         (fun b -> b.Value), (fun value b -> { b with Value = value })
 {% endhighlight %}
 
-All we've had to do is find somewhere to store some lenses (by convention, we usually add them as static member to types like this, and suffix the name with an underscore).
+All we've had to do is find somewhere to store some lenses (by convention, we usually add them as static members to types like this, and suffix the names with an underscore).
 
 Now we can use Aether:
 
@@ -195,7 +195,7 @@ let a' =
     Optic.set avalue_ "GoodbyeWorld!" a
 {% endhighlight %}
 
-In fact, Aether actually lets is make this more succinct if we wish. Rather than using Compose.lens, we can simply compose our lenses in place -- and we can do it with a more concise operator.
+In fact, Aether actually lets us make this more succinct if we wish. Rather than using Compose.lens, we could simply compose our lenses in place. We could also use a terser syntax with composition operators.
 
 {% highlight fsharp %}
 open Aether
