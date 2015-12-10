@@ -1,10 +1,8 @@
 ---
-
+title: Xyncro Tech
 ---
 
-# Xyncro Tech
-
-[Xyncro Tech][xyncro.tech] is the open source part of [Xyncro][xyncro.com]. It's the home of various projects (see left) that started life as part of Xyncro projects and were then open sourced and released.
+[Xyncro Tech][xyncro.tech] is the open source part of [Xyncro][xyncro.com]. It's the home of various projects (see left) that started life as part of Xyncro projects and were then open sourced and released. We also work on various projects that have their own homes, chiefly [Freya][freya].
 
 See each of the projects on the left for more on what they are and do, as well as how to get them and use them.
 
@@ -27,4 +25,5 @@ Open source thrives when people contribute back, and we've been very lucky to ha
 
 <!--- External --->
 
+[freya]: http://freya.io
 [twitter]: {{ site.twitter.url }}

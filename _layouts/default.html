@@ -1,3 +1,4 @@
+{% assign title = "Xyncro Tech" %}
 {% assign project = site.data.projects[page.collection] %}
 {% assign section = site.data.projects[page.collection].sections[page.section] %}
 
@@ -5,7 +6,10 @@
 <html>
   <head>
     <title>
-      Xyncro Tech{% if project.name != null %} / {{ project.name }}{% endif %}{% if section.name != null %} / {{ section.name }}{% endif %}{% if page.title != null and page.title != section.name %} / {{ page.title }}{% endif %}
+      {{ title }}
+      {% if project.name != null %} / {{ project.name }}{% endif %}
+      {% if section.name != null %} / {{ section.name }}{% endif %}
+      {% if page.title != null and page.title != title and page.title != section.name %} / {{ page.title }}{% endif %}
     </title>
     <link href="/css/main.css" rel="stylesheet" />
     <meta charset="utf-8" />

@@ -4,17 +4,19 @@ title: QuickStart
 
 Hopefully you're here because you're interested in __Aether__, an open source optics (lenses, prisms, etc.) library for [F#][fsharp]. You might simply want to start with this:
 
-{% highlight batch linenos=table %}
+{% assign project = site.data.projects["aether"] %}
+
+{% highlight batch %}
 PM> Install-Package Aether
 {% endhighlight %}
 
 If you'd like a bit more information however, we've got you covered.
 
-## Tutorials
+## Guides
 
-If you're not familiar with lenses and related ideas in functional programming, you probably want to start with the [Tutorials][tutorials] which will take you through an introduction (including why motivations and key ideas), all the way to being comfortable with using Aether.
+If you're not familiar with lenses and related ideas in functional programming, you probably want to start with the [Guides][guides] which will take you through an introduction (including why motivations and key ideas), all the way to being comfortable with using Aether.
 
-The [Tutorials][tutorials] section also has a handy section of links to other places discussing lenses, etc. if you want to dig further in, or explore how Aether compares with other language implementations.
+The [Guides][guides] section also has a handy section of links to other places discussing lenses, etc. if you want to dig further in, or explore how Aether compares with other language implementations.
 
 ## Reference
 
@@ -22,7 +24,7 @@ If you're already familiar with lenses and other optics in functional programmin
 
 ## Contributing
 
-Contributions in any form are welcome. The easiest way to contribute is via the main Git repository, linked from [Source][source].
+Contributions in any form are welcome. The easiest way to contribute is via the main Git repository, detailed in [Source][source].
 
 ## Updates
 
@@ -34,7 +36,7 @@ Aether is a much more useful and well designed/tested library now than it was, w
 
 <!--- Local --->
 
-[tutorials]: /aether/tutorials
+[guides]: /aether/guides
 [reference]: /aether/reference
 [packages]:  /aether/packages
 [source]: /aether/source

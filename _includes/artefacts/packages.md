@@ -4,7 +4,7 @@
 
 Packages (release and pre-release) for __{{ project.name }}__ are released [via NuGet][package]. {{ project.name }} can be installed using the NuGet Package Manager, or the NuGet Console:
 
-{% highlight batch linenos=table %}
+{% highlight batch %}
 PM> Install-Package {{ project.name }}
 {% endhighlight %}
 

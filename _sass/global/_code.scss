@@ -11,38 +11,24 @@
 }
             
 @mixin comment {
-    color: $c-light;
+    color: $c-mid;
 }
 
-// Tables
+// Highlighting
 
-.highlighttable {
-    border-collapse: collapse;
-    margin: 0 0 20px -50px;
-    width: 570px;
-    
+.highlight {
+    background-color: #fff;
+    border: 1px solid lighten($c-light, 10%);
+    color: #586e75;
+    margin: 0 0 20px -30px;
+    padding: 10px 30px;
+    width: 500px;
+
     pre {
         @include code;
         line-height: 21px;
     }
     
-    .linenos {
-        color: lighten($c-light, 5%);
-        padding: 1px 0px 0 0;
-        width: 30px;
-    }
-
-    .code {
-        background-color: #fff;
-        border: 1px solid lighten($c-light, 10%);
-        padding: 0 20px;
-        width: 500px;
-    }
-}
-
-.highlight {
-    color: #586e75;
-
     .c {
         @include comment;  /* Comment */
     }

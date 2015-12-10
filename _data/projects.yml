@@ -7,8 +7,8 @@ aether:
   sections:
     updates:
       name: Updates
-    tutorials:
-      name: Tutorials
+    guides:
+      name: Guides
     reference:
       name: Reference
     packages:
