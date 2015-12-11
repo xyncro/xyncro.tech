@@ -16,7 +16,7 @@ For more on available packages for Chiron, see the [Packages][packages] section,
 
 ## Acknowledgements
 
-Chiron has gained various new features and approaches over time thanks to some great contributions. Particular gratitude must go to [Henrik Feldt][feldt], [Marcus Griep][griep] and [Michael Newton][newton] for their contributions, which have made Chiron safer and more useful.
+Chiron has gained various new features and approaches over time thanks to some great contributions. Particular gratitude must go to [Marcus Griep][griep], [Henrik Feldt][feldt], and [Michael Newton][newton] for their contributions, which have made Chiron safer and more usable.
 
 <!--- Local --->
 
