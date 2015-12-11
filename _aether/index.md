@@ -14,7 +14,7 @@ If you'd like a bit more information however, we've got you covered.
 
 ## Guides
 
-If you're not familiar with lenses and related ideas in functional programming, you probably want to start with the [Guides][guides] which will take you through an introduction (including why motivations and key ideas), all the way to being comfortable with using Aether.
+If you're not familiar with lenses and related ideas in functional programming, you probably want to start with the [Guides][guides] which will take you through an introduction (including motivations and key ideas), all the way to being comfortable with using Aether.
 
 The [Guides][guides] section also has a handy section of links to other places discussing lenses, etc. if you want to dig further in, or explore how Aether compares with other language implementations.
 
