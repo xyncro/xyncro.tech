@@ -8,6 +8,8 @@ Optics (often referred to as lenses, although the area is broader) are an often 
 
 To start understanding the what, and importantly the why, the introduction to [Lenses][lenses] is a good place to start. This is best followed by a useful companion to lenses when we're dealing with data which implies uncertainty, [Prisms][prisms]. We also dive in to [Morphisms][morphisms], another hugely useful tool for making it easy to work with data in more usable forms.
 
+Additionally, a section on some of the behavioural [Laws][laws] that we expect from optics is included for those interested.
+
 A useful list of links to [other places discussing lenses][links] is also given.
 
 <!--- Local --->
@@ -15,4 +17,5 @@ A useful list of links to [other places discussing lenses][links] is also given.
 [lenses]: /aether/guides/lenses.html
 [prisms]: /aether/guides/prisms.html
 [morphisms]: /aether/guides/morphisms.html
+[laws]: /aether/guides/laws.html
 [links]: /aether/guides/links.html

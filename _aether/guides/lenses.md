@@ -223,9 +223,7 @@ let a' =
 
 Although in the case of our simple two type system, this might seem complex, the complexity remains constant regardless of the increasing complexity of our data structures. The small investment quickly pays off as our requirements become more taxing.
 
-There's lots more to Aether -- it helps you cover more complex and demanding cases than are seen here. But all of the functionality is built from these same principles -- that composing general functions to work with data structures is the most powerful and flexible way to work, and avoids special cases and syntax which become difficuly to comprehend in complex cases.
-
-
+There's lots more to Aether -- it helps you cover more complex and demanding cases than are seen here. But all of the functionality is built from these same principles -- that composing general functions to work with data structures is the most powerful and flexible way to work, and avoids special cases and syntax which become difficult to comprehend in complex cases.
 
 Next steps: [Prisms][prisms].
 
