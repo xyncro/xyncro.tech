@@ -159,7 +159,7 @@ As we can see this can be a very strong tool, and the overall combination of len
 
 Hopefully these three guides have given you a sense for what can be achieved, even though they just scratch the surface. For a complete guide to what's available with Aether, there's a complete reference available.
 
-Next steps: [Reference][reference]
+Next steps: [Reference][reference].
 
 <!--- Local --->
 
