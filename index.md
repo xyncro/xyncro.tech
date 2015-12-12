@@ -6,7 +6,7 @@ title: Xyncro Tech
 
 We also work on various projects that have their own homes, chiefly [Freya][freya] and related libraries.
 
-See each of the projects on for more on what they are and do, as well as how to get them and use them.
+See each of the projects for more on what they are and do, as well as how to get them and use them.
 
 ## Contributing
 
