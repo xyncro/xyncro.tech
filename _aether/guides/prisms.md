@@ -50,7 +50,7 @@ We've got a lens from RecordA to a RecordB option, but a lens from a RecordB to 
 
 ## Enter Prisms
 
-Prisms work with cases like this. A simple way to put it is that a prism is like a lens, but to something which *is* or *is not* there. In this case, because the type is optional, but we'll some some other common cases shortly.
+Prisms work with cases like this. A simple way to put it is that a prism is like a lens, but to something which *is* or *is not* there. In this case, because the type is optional, but we'll see some other common cases shortly.
 
 So what does a prism look like? Well, here are the types of Lens and Prism:
 
@@ -110,11 +110,11 @@ let a2value =
     Optic.get avalue_ a2
 
 // Sets the Value to Goodbye World!
-let a11 =
+let a1' =
     Optic.set avalue_ "Goodbye World!" a1
 
 // Value is not set, as B is None
-let a22 =
+let a2' =
     Optic.set avalue_ "Goodbye World!" a2
 {% endhighlight %}
 
@@ -147,7 +147,7 @@ type MyUnion =
             | m -> m)
 {% endhighlight %}
 
-Here we've written a prism to the value of MyUnion when the case is First. Our getter is simple, converting the case of First to Some and any other case to None. Our setter however is more complicated. We only set the value of a the First case if the Union was the First case to start with -- otherwise we are structurally altering our MyUnion instance, and not just the *content* of the MyUnion instance.
+Here we've written a prism to the value of MyUnion when the case is First. Our getter is simple, converting the case of First to Some and any other case to None. Our setter however is more complicated. We only set the value of the First case if the Union was the First case to begin with -- otherwise we are structurally altering our MyUnion instance, and not just the *content* of the MyUnion First case instance.
 
 __NOTE:__ This is what we would consider a *well-behaved* prism. For more on the behaviour expected of both lenses and prisms, see the guide to [Laws][laws]. The prism we saw in our first RecordA example was not well-behaved, but was written simply to help first understanding. Here is the well-behaved version of that prism, such that the outer option type is not changeable through the use of the prism:
 
@@ -168,9 +168,9 @@ Our previously intuited behaviour remains the same however -- correctly.
 
 ### Lists
 
-Working with lists is also an excellent candidate for prisms. The elements we consider to be part of a list (head and tail) are either there or not, and thus can be defined through prisms. An item at an indexed position within a list also is either present or absent, so can also be expressed as a prism.
+Working with lists is also an excellent candidate for prisms. The elements we consider to be part of a list (head and tail) are either there or not, and thus can be defined through prisms. An item at an indexed position within a list is also either present or absent, so can also be expressed as a prism.
 
-Here are some appropriate (generic) prisms for list elements. (These are provided as part of Aether -- see the [Reference][reference] section for provided lenses, prisms, etc.)
+Here are some appropriate (generic) prisms for lists. (These are provided as part of Aether -- see the [Reference][reference] section for provided lenses, prisms, etc.)
 
 {% highlight fsharp %}
 // Prism<'a list,'a>
@@ -185,7 +185,7 @@ List.pos_
 
 ## Further
 
-We've seen that prisms can be a very useful approach to dealing with uncertainty in data structures, and the basics of writing our own prisms. There is of course still more to Aether, but we now have, in the combination of lenses and prisms, some powerful tools with which to work on data. These tools are general and predictable, and hopefully readily accessible when using Aether.
+We've seen that prisms can be a very useful approach to dealing with uncertainty in data structures, and the basics of writing our own prisms. There is of course still more to Aether, but we now have -- in the combination of lenses and prisms -- some powerful tools with which to work on data. These tools are general and predictable, and hopefully readily accessible when using Aether.
 
 Next steps: [Morphisms][morphisms].
 
