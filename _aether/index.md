@@ -12,6 +12,10 @@ PM> Install-Package Aether
 
 If you'd like a bit more information however, we've got you covered.
 
+## Chat
+
+If you want to ask any questions on Aether, or have suggestions, please come along and chat in the [Aether Room][room].
+
 ## Guides
 
 If you're not familiar with lenses and related ideas in functional programming, you probably want to start with the [Guides][guides] which will take you through an introduction (including motivations and key ideas), all the way to being comfortable with using Aether.
@@ -44,6 +48,7 @@ Aether is a much more useful and well designed/tested library now than it was, w
 
 <!--- External --->
 
+[room]: https://gitter.im/xyncro/aether
 [fsharp]: http://fsharp.org
 [twitter]: {{ site.twitter.url }}
 

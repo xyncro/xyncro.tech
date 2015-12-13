@@ -3,4 +3,4 @@ title: Updates
 section: updates
 ---
 
-{% include updates/feed.html project="hekate" %}
+{% include updates/feed.md project="hekate" %}
