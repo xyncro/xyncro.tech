@@ -24,6 +24,8 @@ chiron:
   sections:
     updates:
       name: Updates
+    guides:
+      name: Guides
     #reference:
       #name: Reference
     packages:

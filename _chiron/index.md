@@ -8,7 +8,7 @@ This is the place to get started using __Chiron__, an open source library for wo
 PM> Install-Package Chiron
 {% endhighlight %}
 
-We're still working on tutorial and reference content for working with Chiron, so in the meantime, keep an eye on the [Updates][updates], and follow [{{ site.twitter.name }}][twitter] on Twitter.
+We're working on [Guides][guides] and reference content for working with Chiron, so keep an eye on the [Updates][updates], and follow [{{ site.twitter.name }}][twitter] on Twitter.
 
 ## Chat
 
@@ -25,6 +25,7 @@ Chiron has gained various new features and approaches over time thanks to some g
 <!--- Local --->
 
 [updates]: /chiron/updates
+[guides]: /chiron/guides
 [packages]:  /chiron/packages
 [source]: /chiron/source
 
