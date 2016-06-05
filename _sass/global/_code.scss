@@ -16,18 +16,15 @@
 
 // Highlighting
 
-.highlight {
+pre {
+    @include code;
     background-color: #fff;
     border: 1px solid lighten($c-light, 10%);
     color: #586e75;
+    line-height: 21px;
     margin: 0 0 20px -30px;
-    padding: 10px 30px;
+    padding: 20px 30px;
     width: 500px;
-
-    pre {
-        @include code;
-        line-height: 21px;
-    }
     
     .c {
         @include comment;  /* Comment */

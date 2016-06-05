@@ -1,7 +1,7 @@
 ---
 title: Overview
 section: guides
-sort: 1
+order: 1
 ---
 
 Chiron is a JSON library for F#. It can handle all of the usual things you'd want to do with JSON, (parsing and formatting, serialization and deserialization) as well as providing some additional ways to work with JSON using optics (see [Aether][aether] for more on optics -- Aether is the supported optics implementation).

@@ -6,9 +6,9 @@ Source for __{{ project.name }}__ is available [on GitHub][github], and developm
 
 To quickly get the source locally:
 
-{% highlight batch %}
+```shell
 $ git clone {{ project.artefacts.github }}.git
-{% endhighlight %}
+```
 
 ## Licensing
 

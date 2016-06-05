@@ -6,9 +6,9 @@ Hopefully you're here because you're interested in __Aether__, an open source op
 
 {% assign project = site.data.projects["aether"] %}
 
-{% highlight batch %}
+```shell
 PM> Install-Package Aether
-{% endhighlight %}
+```
 
 If you'd like a bit more information however, we've got you covered.
 

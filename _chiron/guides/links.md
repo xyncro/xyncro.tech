@@ -1,7 +1,7 @@
 ---
 title: Links
 section: guides
-sort: 2
+order: 2
 ---
 
 Various articles on Chiron are linked from here as they're found in the wider community.

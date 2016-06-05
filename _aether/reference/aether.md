@@ -1,7 +1,7 @@
 ---
 title: Aether
 section: reference
-sort: 2
+order: 2
 ---
 
 Aether is a relatively simple library -- there's nothing inherently complex about the way that optics are implemented in Aether. However this reference will likely make most sense if you have some expectation about the kinds of things you'll see -- if you're not familiar with lenses, prisms, etc. it's probably best to start with the [Guides][guides] to get some background.

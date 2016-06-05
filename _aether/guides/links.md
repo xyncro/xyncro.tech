@@ -1,7 +1,7 @@
 ---
 title: Links
 section: guides
-sort: 6
+order: 6
 ---
 
 Coming Soon.

@@ -1,7 +1,7 @@
 ---
 title: Aether.Operators
 section: reference
-sort: 3
+order: 3
 ---
 
 Aether can be used without the adoption of any custom operators, but particularly in the case of optic composition, the use of operators can serve to make the code significantly more succinct and readable. The number of operators required has been significantly reduced from earlier versions of Aether, making the usage increasingly friendly to the code reader.

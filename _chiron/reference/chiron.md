@@ -1,7 +1,7 @@
 ---
 title: Chiron
 section: reference
-precedence: 1
+order: 1
 ---
 
 <div class="contents">

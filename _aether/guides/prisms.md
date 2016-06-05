@@ -1,7 +1,7 @@
 ---
 title: Prisms
 section: guides
-sort: 3
+order: 3
 ---
 
 In the previous guide, introducing [Lenses][lenses] and their basic motivations, we saw ways of working with very predictable data structures. All of the types were guaranteed to be present and correct, and our composition of lenses to focus deep in to a data structure was sure to succeed.
@@ -10,13 +10,13 @@ In the real world though, it's possible to have data structures which aren't qui
 
 Consider the following pair of types:
 
-{% highlight fsharp %}
+```ocaml
 type RecordA =
     { B: RecordB option }
 
  and RecordB =
     { Value: string }
-{% endhighlight %}
+```
 
 They're quite familiar from our exploration in [Lenses][lenses], except for one detail -- the property of B in RecordA is an *option* of RecordB.
 
@@ -24,7 +24,7 @@ They're quite familiar from our exploration in [Lenses][lenses], except for one 
 
 Let's see what's wrong with just using simple lenses now, by adding lenses to our types.
 
-{% highlight fsharp %}
+```ocaml
 type RecordA =
     { B: RecordB option }
 
@@ -36,15 +36,15 @@ type RecordA =
 
     static member Value_ =
         (fun b -> b.Value), (fun value b -> { b with Value = value })
-{% endhighlight %}
+```
 
 We've got lenses that look correct, but what happens when we try and compose them to get from RecordA to Value?
 
-{% highlight fsharp %}
-// Fails to type check!
+```ocaml
+(* Fails to type check! *)
 let avalue_ =
     RecordA.B_ >-> RecordB.Value_
-{% endhighlight %}
+```
 
 We've got a lens from RecordA to a RecordB option, but a lens from a RecordB to a string -- the types won't match up. This is clearly not going to work as it is.
 
@@ -54,45 +54,45 @@ Prisms work with cases like this. A simple way to put it is that a prism is like
 
 So what does a prism look like? Well, here are the types of Lens and Prism:
 
-{% highlight fsharp %}
-/// Lens from 'a -> 'b.
+```ocaml
+(* Lens from 'a -> 'b. *)
 type Lens<'a,'b> =
     ('a -> 'b) * ('b -> 'a -> 'a)
 
-/// Prism from 'a -> 'b.
+(* Prism from 'a -> 'b. *)
 type Prism<'a,'b> =
     ('a -> 'b option) * ('b -> 'a -> 'a)
-{% endhighlight %}
+```
     
 They're very similar indeed -- except that the getter in the prism returns an option of 'a, rather than a simple 'a. Now we can write logic which will compose prisms, which is slightly different to composing lenses.
 
 Here are our types again, now with a prism provided instead of a lens on RecordA, and type signatures:
 
-{% highlight fsharp %}
+```ocaml
 type RecordA =
     { B: RecordB option }
 
-    // Prism<RecordA,RecordB>
+    (* Prism<RecordA,RecordB> *)
     static member B_ =
         (fun a -> a.B), (fun b a -> { a with B = Some b })
 
  and RecordB =
     { Value: string }
 
-    // Lens<RecordB,string>
+    (* Lens<RecordB,string> *)
     static member Value_ =
         (fun b -> b.Value), (fun value b -> { b with Value = value })
-{% endhighlight %}
+```
 
 We can see that we've modified B_ to return the option value in the getter, but to take a normal value in the setter, so we conform to the type of Prism.
 
 Now here's our composition again, with the type signature:
 
-{% highlight fsharp %}
-// Prism<RecordA,string>
+```ocaml
+(* Prism<RecordA,string> *)
 let avalue_ =
     RecordA.B_ >?> RecordB.Value_
-{% endhighlight %}
+```
 
 We've composed a prism (on the left) with a lens, and returned a new prism.
 
@@ -100,23 +100,23 @@ __Note:__ We've used a new operator here for composition. The >?> operator is th
 
 Now we can start to get an intuition for how this new prism will behave.
 
-{% highlight fsharp %}
-// Returns Some "Hello World!"
+```ocaml
+(* Returns Some "Hello World!" *)
 let a1value =
     Optic.get avalue_ a1
 
-// Returns None
+(* Returns None *)
 let a2value =
     Optic.get avalue_ a2
 
-// Sets the Value to Goodbye World!
+(* Sets the Value to Goodbye World! *)
 let a1' =
     Optic.set avalue_ "Goodbye World!" a1
 
-// Value is not set, as B is None
+(* Value is not set, as B is None *)
 let a2' =
     Optic.set avalue_ "Goodbye World!" a2
-{% endhighlight %}
+```
 
 We can see that we actually gain something here -- a quick and type checked way to work with more complex data structures, where we may not have such predictable data. The behaviour is quite straightforward, and composition still works, even though we're using lenses and prisms.
 
@@ -130,12 +130,12 @@ We've seen that a prism is a good match for the obvious example -- where the val
 
 Prisms are applicable to all union types (Option is a union type of course, with cases Some and None). How we would we write prisms for a custom union type of our own?
 
-{% highlight fsharp %}
+```ocaml
 type MyUnion =
     | First of int
     | Second of string
 
-    // Prism<MyUnion,int>
+    (* Prism<MyUnion,int> *)
     static member First_ =
         (fun m ->
             match m with 
@@ -145,24 +145,24 @@ type MyUnion =
             match m with
             | First _ -> First i
             | m -> m)
-{% endhighlight %}
+```
 
 Here we've written a prism to the value of MyUnion when the case is First. Our getter is simple, converting the case of First to Some and any other case to None. Our setter however is more complicated. We only set the value of the First case if the Union was the First case to begin with -- otherwise we are structurally altering our MyUnion instance, and not just the *content* of the MyUnion First case instance.
 
 __NOTE:__ This is what we would consider a *well-behaved* prism. For more on the behaviour expected of both lenses and prisms, see the guide to [Laws][laws]. The prism we saw in our first RecordA example was not well-behaved, but was written simply to help first understanding. Here is the well-behaved version of that prism, such that the outer option type is not changeable through the use of the prism:
 
-{% highlight fsharp %}
+```ocaml
 type RecordA =
     { B: RecordB option }
 
-    // Prism<RecordA,RecordB>
+    (* Prism<RecordA,RecordB> *)
     static member B_ =
         (fun a -> a.B),
         (fun b a ->
             match a with
             | a when a.B.IsSome -> { a with B = Some b }
             | a -> a)
-{% endhighlight %}
+```
 
 Our previously intuited behaviour remains the same however -- correctly.
 
@@ -172,16 +172,16 @@ Working with lists is also an excellent candidate for prisms. The elements we co
 
 Here are some appropriate (generic) prisms for lists. (These are provided as part of Aether -- see the [Reference][reference] section for provided lenses, prisms, etc.)
 
-{% highlight fsharp %}
-// Prism<'a list,'a>
+```ocaml
+(* Prism<'a list,'a> *)
 List.head_
 
-// Prism<'a list,'a list>
+(* Prism<'a list,'a list> *)
 List.tail_
 
-// int -> Prism<'a list,'a>
+(* int -> Prism<'a list,'a> *)
 List.pos_
-{% endhighlight %}
+```
 
 ## Further
 

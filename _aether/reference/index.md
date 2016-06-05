@@ -1,7 +1,7 @@
 ---
 title: Overview
 section: reference
-sort: 1
+order: 1
 ---
 
 Reference material for Aether (in common with other Xyncro projects) is split in to module level sections, corresponding to *"things that opening module X brings in to scope"*. So the [Aether][aether] section deals with everything in scope when you open __Aether__, and [Aether.Operators][aether.operators] deals with additional elements in scope when __Aether.Operators__ is opened.

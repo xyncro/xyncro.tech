@@ -1,7 +1,7 @@
 ---
 title: Overview
 section: guides
-sort: 1
+order: 1
 ---
 
 Optics (often referred to as lenses, although the area is broader) are an often overlooked but very useful tool in functional programming. Used well, they can reduce the amount of code we have to write significantly, as well as making operations clearer and more readable.
