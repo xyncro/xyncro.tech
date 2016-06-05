@@ -12,7 +12,7 @@ We're still working on reference content for working with Hekate, so in the mean
 
 ## Packages and Source
 
-For more on available packages for Chiron, see the [Packages][packages] section, or if you're interested in the source (contributions are more than welcome) see [Source][source].
+For more on available packages for Hekate, see the [Packages][packages] section, or if you're interested in the source (contributions are more than welcome) see [Source][source].
 
 <!--- Local --->
 

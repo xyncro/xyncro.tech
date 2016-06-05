@@ -15,9 +15,13 @@ kramdown:
 collections:
   aether:
     output: true
+  anat:
+    output: true
   chiron:
     output: true
   hekate:
+    output: true
+  hephaestus:
     output: true
     
 defaults:

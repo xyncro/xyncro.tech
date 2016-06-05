@@ -15,6 +15,19 @@ aether:
       name: Packages
     source:
       name: Source
+anat:
+  name: Anat
+  description: Arrows for F#
+  artefacts:
+    github: https://github.com/xyncro/anat
+    nuget: https://www.nuget.org/packages/anat
+  sections:
+    updates:
+      name: Updates
+    packages:
+      name: Packages
+    source:
+      name: Source
 chiron:
   name: Chiron
   description: JSON for F#
@@ -38,6 +51,19 @@ hekate:
   artefacts:
     github: https://github.com/xyncro/hekate
     nuget: https://www.nuget.org/packages/hekate
+  sections:
+    updates:
+      name: Updates
+    packages:
+      name: Packages
+    source:
+      name: Source
+hephaestus:
+  name: Hephaestus
+  description: Machines for F#
+  artefacts:
+    github: https://github.com/xyncro/hephaestus
+    nuget: https://www.nuget.org/packages/hephaestus
   sections:
     updates:
       name: Updates
