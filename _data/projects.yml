@@ -45,6 +45,12 @@ chiron:
       name: Packages
     source:
       name: Source
+freya:
+  name: Freya
+  description: F# Web Stack
+  artefacts:
+    github: https://github.com/xyncro/freya
+    nuget: https://www.nuget.org/packages/freya
 hekate:
   name: Hekate
   description: Graphs for F#
