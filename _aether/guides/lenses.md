@@ -205,7 +205,7 @@ let a =
     { B = { Value = "Hello World!" } }
 
 (* A lens, composed using Aether operators *)
-let avalue_
+let avalue_ =
     RecordA.B_ >-> RecordB.Value_
 
 (* Get the value using an existing lens *)
