@@ -34,7 +34,7 @@ As with composition, operators are provided for the three key operations relatin
 (^=)
 
 (* ('b -> 'b) -> Optic<'a,'b> -> 'a -> 'a *)
-(^&)
+(^%)
 ```
 
 <!-- Local -->
