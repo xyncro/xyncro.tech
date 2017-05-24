@@ -31,7 +31,7 @@ Chiron has gained various new features and approaches over time thanks to some g
 
 <!--- External --->
 
-[room]: https://gitter.im/xyncro/aether
+[room]: https://gitter.im/xyncro/chiron
 [fsharp]: http://fsharp.org
 [twitter]: {{ site.twitter.url }}
 
